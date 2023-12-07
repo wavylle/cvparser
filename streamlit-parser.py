@@ -1,10 +1,9 @@
 import streamlit as st
-import PyPDF2
 from pdfminer.high_level import extract_text
 from pyresparser import ResumeParser
 import spacy
 
-spacy.load('en_core_web_lg')
+spacy.load('en_core_web_sm')
 
 def extract_text_from_pdf(pdf_path):
     return extract_text(pdf_path)
