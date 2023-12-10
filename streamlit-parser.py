@@ -3,6 +3,8 @@ from pdfminer.high_level import extract_text
 from pyresparser import ResumeParser
 import spacy
 
+nltk.download("stopwords")
+
 spacy.load('en_core_web_sm')
 
 def extract_text_from_pdf(pdf_path):
